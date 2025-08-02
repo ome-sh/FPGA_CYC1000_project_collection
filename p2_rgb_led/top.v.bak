@@ -1,0 +1,10 @@
+module top (
+	input i_clk,
+	output o_red,
+	output o_green,
+	output o_blue
+	);
+	
+	
+	
+endmodule

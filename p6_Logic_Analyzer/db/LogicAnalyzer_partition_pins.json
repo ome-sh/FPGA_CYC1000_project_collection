@@ -1,0 +1,65 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "uarttx",
+					"strict" : false
+				},
+				{
+					"name" : "uatxled",
+					"strict" : false
+				},
+				{
+					"name" : "uarxled",
+					"strict" : false
+				},
+				{
+					"name" : "triggrok",
+					"strict" : false
+				},
+				{
+					"name" : "clkoutN",
+					"strict" : false
+				},
+				{
+					"name" : "uartrx",
+					"strict" : false
+				},
+				{
+					"name" : "Datin[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Datin[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Datin[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Datin[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Datin[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Datin[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Datin[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Datin[7]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

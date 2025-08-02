@@ -1,0 +1,37 @@
+|blinky
+clk => r_freq.CLK
+clk => r_count[0].CLK
+clk => r_count[1].CLK
+clk => r_count[2].CLK
+clk => r_count[3].CLK
+clk => r_count[4].CLK
+clk => r_count[5].CLK
+clk => r_count[6].CLK
+clk => r_count[7].CLK
+clk => r_count[8].CLK
+clk => r_count[9].CLK
+clk => r_count[10].CLK
+clk => r_count[11].CLK
+clk => r_count[12].CLK
+clk => r_count[13].CLK
+clk => r_count[14].CLK
+clk => r_count[15].CLK
+clk => r_count[16].CLK
+clk => r_count[17].CLK
+clk => r_count[18].CLK
+clk => r_count[19].CLK
+clk => r_count[20].CLK
+clk => r_count[21].CLK
+clk => r_count[22].CLK
+clk => r_count[23].CLK
+clk => r_count[24].CLK
+clk => r_count[25].CLK
+clk => r_count[26].CLK
+clk => r_count[27].CLK
+clk => r_count[28].CLK
+clk => r_count[29].CLK
+clk => r_count[30].CLK
+clk => r_count[31].CLK
+led1 <= r_freq.DB_MAX_OUTPUT_PORT_TYPE
+
+

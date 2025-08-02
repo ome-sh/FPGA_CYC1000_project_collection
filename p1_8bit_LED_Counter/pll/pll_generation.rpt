@@ -1,0 +1,32 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate C:\Users\PC\Documents\00_FPGA\INTEL_Cyclone10_CYC1000\p1_LED\pll.qsys --block-symbol-file --output-directory=C:\Users\PC\Documents\00_FPGA\INTEL_Cyclone10_CYC1000\p1_LED\pll --family="Cyclone 10 LP" --part=10CL025YU256C8G
+Progress: Loading p1_LED/pll.qsys
+Progress: Reading input file
+Progress: Adding altclkctrl_0 [altclkctrl 20.1]
+Progress: Parameterizing module altclkctrl_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+: pll.altclkctrl_0: Targeting device family: Cyclone 10 LP.
+: pll.altclkctrl_0: Global clock network allows a clock signal to reach all parts of the chip with the same amount of skew. Input port 'clkselect' can be used to switch between four clock inputs.
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\Users\PC\Documents\00_FPGA\INTEL_Cyclone10_CYC1000\p1_LED\pll.qsys --synthesis=VERILOG --output-directory=C:\Users\PC\Documents\00_FPGA\INTEL_Cyclone10_CYC1000\p1_LED\pll\synthesis --family="Cyclone 10 LP" --part=10CL025YU256C8G
+Progress: Loading p1_LED/pll.qsys
+Progress: Reading input file
+Progress: Adding altclkctrl_0 [altclkctrl 20.1]
+Progress: Parameterizing module altclkctrl_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+: pll.altclkctrl_0: Targeting device family: Cyclone 10 LP.
+: pll.altclkctrl_0: Global clock network allows a clock signal to reach all parts of the chip with the same amount of skew. Input port 'clkselect' can be used to switch between four clock inputs.
+Info: pll: Generating pll "pll" for QUARTUS_SYNTH
+Error: Generation stopped, 1 or more modules remaining
+Info: pll: Done "pll" with 2 modules, 1 files
+Error: qsys-generate failed with exit code 1: 1 Error, 0 Warnings
+Info: Stopping: Create HDL design files for synthesis

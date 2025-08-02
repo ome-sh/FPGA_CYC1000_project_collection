@@ -1,0 +1,18 @@
+module blinky (
+	input clk,
+	output led1
+	);
+	
+	reg [31:0] r_count;
+	reg r_freq;
+	
+	always @(posedge clk) begin
+		r_count <= r_count + 1;
+		if(r_count == 12000000) begin
+			r_count <= 0;
+			r_freq <= ~r_freq;
+		end
+	end
+	
+	assign led1 = r_freq;
+endmodule

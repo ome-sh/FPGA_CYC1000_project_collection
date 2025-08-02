@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at sha256.v(98): always construct contains both blocking and non-blocking assignments File: /home/linux/Dokumente/00_FPGA/INTEL_Cyclone10_CYC1000/p4_SHA256/sha256.v Line: 98
+Warning (10268): Verilog HDL information at sha256.v(157): always construct contains both blocking and non-blocking assignments File: /home/linux/Dokumente/00_FPGA/INTEL_Cyclone10_CYC1000/p4_SHA256/sha256.v Line: 157

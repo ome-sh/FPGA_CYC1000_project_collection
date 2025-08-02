@@ -1,0 +1,25 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "o_red",
+					"strict" : false
+				},
+				{
+					"name" : "o_green",
+					"strict" : false
+				},
+				{
+					"name" : "o_blue",
+					"strict" : false
+				},
+				{
+					"name" : "i_clock",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

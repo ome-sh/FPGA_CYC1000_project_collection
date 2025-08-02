@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Fri Feb 18 04:12:53 2022
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : LogicAnalyzer
+Top-level Entity Name : derf
+Family : Cyclone 10 LP
+Total logic elements : 325
+    Total combinational functions : 236
+    Dedicated logic registers : 224
+Total registers : 224
+Total pins : 16
+Total virtual pins : 0
+Total memory bits : 6,144
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 2

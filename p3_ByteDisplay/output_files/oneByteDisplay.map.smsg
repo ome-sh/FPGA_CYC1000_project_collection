@@ -1,0 +1,3 @@
+Warning (10268): Verilog HDL information at top.v(31): always construct contains both blocking and non-blocking assignments File: C:/Users/PC/Documents/00_FPGA/INTEL_Cyclone10_CYC1000/p3_ByteDisplay/top.v Line: 31
+Warning (10268): Verilog HDL information at top.v(39): always construct contains both blocking and non-blocking assignments File: C:/Users/PC/Documents/00_FPGA/INTEL_Cyclone10_CYC1000/p3_ByteDisplay/top.v Line: 39
+Warning (10268): Verilog HDL information at top.v(60): always construct contains both blocking and non-blocking assignments File: C:/Users/PC/Documents/00_FPGA/INTEL_Cyclone10_CYC1000/p3_ByteDisplay/top.v Line: 60

@@ -1,0 +1,7 @@
+module top(
+	input clock,
+	input button,
+	output led
+	);
+	
+endmodule

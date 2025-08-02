@@ -1,0 +1,19 @@
+module prescaler(
+	input clk_100mhz,
+	output freq
+	);
+	
+	reg [31:0] r_counter;
+	reg r_freq;
+	
+	always @(posedge clk_100mhz) begin
+		r_counter <= r_counter + 1;
+		if(r_counter == 100000000) begin
+			r_counter <=0;
+			r_freq = ~ r_freq;
+		end
+	end
+	
+	assign freq = r_freq;
+	
+endmodule

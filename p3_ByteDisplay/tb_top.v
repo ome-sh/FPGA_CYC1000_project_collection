@@ -1,0 +1,8 @@
+module tb_top(
+	input clk,
+	output [15:0]data
+	);
+	
+	assign data = 16'hff11;
+	
+endmodule

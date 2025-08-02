@@ -1,0 +1,433 @@
+
+ 
+  module derf(uarttx,uartrx,uatxled,uarxled,triggrok,Datin,clkoutN ,freq_in, led);
+  
+	 output clkoutN,uatxled,uarxled,triggrok, led;
+	
+
+	 output reg uarttx;
+	 input freq_in,uartrx;
+	 input [7:0] Datin;
+	 
+    reg [7:0] smptm,ynltm,trgv1,trgv2,usrcrct,memot,saycd,ilkdt,brncdt,ikncdt;	
+	 reg uarttxbsl,uartrxbs,hazir,uarterrd; 
+	 reg [9:0] uartsyo,datay; 
+	 reg [3:0] yukle,uartinsy;
+	 reg [2:0] ualmsy,uarterr;
+	 reg [8:0] uarto,uarti; 
+    reg clkout,databas,mhz777;
+	 wire freq_in_2, freq_in_1;
+	 wire clckurt,urtntrg,usrtbsk;
+	 
+	 reg [7:0] uartmemo [0:767],uatinmm[0:4]; 
+	 initial begin
+    $readmemh("memox.mif", uartmemo, 0, 767);
+	 end
+	 
+	clk clk_inst (
+	  .areset(),
+	  .inclk0(freq_in),
+	  .c0(freq_in_2),
+	  .locked()
+	  );
+	 
+	 	
+  
+ wire mhz50,mhz200,mhzwe,mhz25,mhz125,mhz10,mhz5,mhz2,mhz1,khz500,khz250,khz100,khz50,khz25,khz10,khz5,khz2,khz1,Hz200,clkk1,clkk2;
+ wire uatkoclk,uatbkclk,utxcntclk1,utxcntclk2,urtzmnck,kopylbsl,clkmmc;
+
+	
+   assign clkoutN=clkout&smptm[5];
+	assign triggrok=~smptm[5];
+	Coountrst(uatxled,uatkoclk,vfdfv);
+	Coountrst(uarxled,uatkoclk,uartrxbs);	
+	
+	
+  CLKLOCK HHj(freq_in_2,mhz100);
+  defparam  HHj.INPUT_FREQUENCY=50;
+  defparam  HHj.CLOCKBOOST=2; 
+
+   TrigDly(mhz200, mhz100);
+	Div2(mhz50, mhz100); 
+	Div2(mhz25, mhz50);
+	Div5(mhz10, mhz50);
+	Div2(mhz5, mhz10);
+	Div5(mhz2, mhz10);
+	Div2(mhz1, mhz2);
+	Div2(khz500, mhz1);
+	Div2(khz250, khz500);
+	Div5(khz100, khz500);
+	Div2(khz50, khz100);
+	Div2(khz25, khz50);
+	Div5(khz10, khz50);
+	Div2(khz5, khz10);
+	Div5(khz2, khz10);
+	Div2(khz1, khz2);
+	Div16(uatbkclk,uatkoclk,khz1);
+	Div16(utxcntclk1,utxcntclk2,uatbkclk);
+	Div17(clckurt, mhz2);
+	
+   always@(*)
+    begin
+	  case(smptm[4:0]) 
+  	  5'b00000: clkout<=mhz1;
+     5'b00001: clkout<=mhz100;  
+     5'b00010: clkout=mhz50;   
+     5'b00011: clkout=mhz25; 
+     5'b00100: clkout=mhz10; 
+     5'b00101: clkout=mhz5;  
+     5'b00110: clkout=mhz2;
+	  5'b00111: clkout=mhz200;
+	  5'b01000: clkout<=khz500; 
+     5'b01001: clkout<=khz250;  
+     5'b01010: clkout<=khz100;   
+     5'b01011: clkout<=khz50; 
+     5'b01100: clkout<=khz25; 
+	  5'b01101: clkout<=khz10; 
+     5'b01110: clkout<=khz5;   
+     5'b01111: clkout<=khz2; 
+     5'b10000: clkout<=khz1; 	 	
+	  default: clkout<=mhz50; 
+	 endcase
+	end
+		
+	 
+	
+	
+	
+	
+  always@(posedge clckurt)
+	begin
+ 	 uarterr[0]<=uatkoclk;
+  	  if(uarterr[0]!=uatkoclk) 
+          begin   
+           uarterr[2:1]<=uarterr[2:1]+2'h1;  
+             if(uarterr[2]) 
+               begin  
+                uartrxbs<=0; 
+                ualmsy<=0; 
+                usrcrct<=0; 
+               end    
+            end
+	       if(uartrx==0)  
+           begin  
+            if(uartrxbs==0)  
+               begin  
+                uarterr[2:1]<=0;  
+                uartinsy<=4'h0; 
+                uartrxbs<=1;   
+               end 
+            end
+	      if(uartrxbs) 
+           begin
+	      if(uartinsy[3]) 
+            begin  
+               uatinmm[ualmsy]<=uarti[7:0]; 
+               usrcrct<=usrcrct+uarti[7:0];	
+               ualmsy<=ualmsy+3'h1;  
+               uartrxbs<=1'h0;  
+             end  
+              else 
+            begin   
+             uarti[uartinsy]<=uartrx;   
+             uartinsy<=uartinsy+4'h1;  
+              end 
+	        end 
+            else 
+             begin  
+               if(ualmsy==5) 
+                  begin  
+                    if(usrcrct==8'hAA)  
+                       begin 
+                        smptm<=uatinmm[0]; 
+                        ynltm<=uatinmm[1];  
+                        trgv1<=uatinmm[2]; 
+                        trgv2<=uatinmm[3];
+                       end 
+                  ualmsy<=0;  
+                  usrcrct<=0;   
+                       end 
+	             end  
+           end
+	
+	 
+
+     assign	clkmmc=(uarttxbsl&clckurt)|(databas&clkout);
+	
+	
+
+     always@(posedge clkmmc)
+         begin
+	       if(uarttxbsl) 
+            begin  
+             memot=uartmemo[uartsyo]; 
+            end 
+             else 
+            begin 
+             if(databas) uartmemo[datay]<=Datin; 
+            end
+   
+         end
+	
+	
+	
+   BekleCount(urtzmnck,utxcntclk1,uarttxbsl|databas);
+  
+   BekleCount2(kopylbsl,uatkoclk,ynltm,uarttxbsl);
+	
+   T_FFxx(vfdfv,hazir,uarttxbsl);	
+
+	
+    always@(posedge clckurt)
+	     begin
+	         if((vfdfv)|(urtzmnck)) 
+             begin  
+               if(~uarttxbsl) 
+                   begin  
+                      if(vfdfv) saycd<=saycd+1;  
+                      uarttxbsl<=1; 
+                      uartsyo<=0;  
+                      yukle<=4'h9;  
+                  end 
+             end
+	         if((uartsyo[9])&&(uartsyo[8])) 
+             begin 
+              uarttxbsl<=0; 
+              uartsyo<=0; 
+             end
+	         if((yukle[0])&&(yukle[3]))   
+             begin
+	           uarttx<=1;
+	           if(uarttxbsl) 
+                 begin 
+                  uarto[0]<=1'h0;   
+                  uarto[8:1]<=memot;  
+                   if(uartsyo==10'd26)  uarto[8:1]<=saycd;  
+                   if(uartsyo==10'd27) uarto[8:1]<=brncdt;  
+                   if(uartsyo==10'd28) uarto[8:1]<=ikncdt;  
+                   uartsyo<=uartsyo+10'h1; 
+                   yukle<=4'h0; 
+                 end  
+	           end 
+            else 
+              begin 
+               uarttx<=uarto[yukle]; 
+               yukle<=yukle+4'h1;  
+             end 
+    	  end 
+	  
+ 	
+	  T_FFxx(zxmzdd,kopylbsl&smptm[5],databas);	
+
+	
+	  
+ always@(posedge clkout)
+	begin
+    ilkdt<=Datin;
+	 if(zxmzdd) 
+	  begin
+	  if(~smptm[6])
+	  begin 
+      	if(~databas) 
+           begin  
+            brncdt<=ilkdt; 
+            ikncdt<=Datin;  
+            databas<=1; 
+            hazir<=0; 
+            datay<=10'd29;  
+           end
+	     end 
+     else 
+            begin
+	            if((((Datin^ilkdt)&trgv1)&(Datin^trgv2))!=8'h0)  
+                begin 
+                 brncdt<=ilkdt; 
+                 ikncdt<=Datin; 
+                 databas<=1; 
+                 hazir<=0; 
+                 datay<=10'd29;  
+               end
+	  end
+	 end
+	  
+      if(uarttxbsl) begin hazir<=0;    end
+	   if(databas) 
+	   begin
+		      if((datay[9])&&(datay[8])) 
+                  begin   
+                   databas<=0; 
+                   datay<=10'd29; 
+                   hazir<=1;  
+                  end 
+                   else 
+                 begin 
+                  datay<=datay+10'd1; 
+                 end
+	            end
+              end	
+
+	
+  endmodule
+  
+  
+ 
+  module TrigDly(Clockout, Clockin);
+  	output Clockout; 
+	input  Clockin;
+   reg QQ; 
+	assign Clockout=QQ^Clockin;
+   always @ (posedge Clockout)
+    	begin
+      QQ=~QQ;
+      end
+	 endmodule
+ 
+ 
+ module Div5(Clockout, Clockin);
+  	output reg Clockout; 
+	input  Clockin;
+   reg[2:0] SS; 
+   always @ (posedge Clockin)
+    	begin
+      SS<=SS+3'h1;
+	    	if(SS>=3'h2) 
+                  begin   
+                   Clockout<=1'h1; 
+                    if(SS==3'h4) 
+                      begin 
+                       SS<=3'h0; 
+                       Clockout<=1'h0; 
+                      end 
+                  end 
+                   else begin Clockout<=1'h0; end
+          end
+   endmodule
+
+ module Div2(Clockout, Clockin);
+  	output reg Clockout; 
+	input  Clockin;
+   always @ (posedge Clockin)
+    	begin
+      Clockout<=~Clockout;
+      end
+   endmodule
+
+ module Div16(Clockout1,Clockout2, Clockin);
+  	output Clockout1,Clockout2; 
+	input  Clockin;
+	reg[3:0] SS; 
+   assign Clockout1=SS[3];
+   assign Clockout2=SS[2];
+	always @ (posedge Clockin)
+    	begin
+      SS<=SS+4'h1;
+      end
+   endmodule
+
+	
+ module Div17(Clockout, Clockin);
+  	output reg Clockout; 
+	input  Clockin;
+   reg[4:0] VV; 
+   always @ (posedge Clockin)
+    	begin
+         VV<=VV+5'h1;
+	  if(VV==5'h10) 
+           begin   
+            Clockout<=1'h1; 
+            VV<=5'h0;  
+            end  
+             else begin Clockout<=1'h0; end
+      end
+   endmodule
+	
+	
+  module Coountrst(out,osc,rst);
+    output reg out;
+	 input osc,rst;
+	 
+	 reg [1:0] drty;
+
+	 always@(posedge osc or posedge rst)
+    begin  
+  	 if(rst) begin  out<=1'h0; drty<=2'h0;  end else begin  if(drty==2'h3)  out<=1'h1; else  drty<=drty+2'h1;   end
+    end	
+    endmodule
+
+  module BekleCount(out,osc,rst);
+    output reg out;
+	 input osc,rst;
+	 reg [3:0] drty;
+	 always@(posedge osc or posedge rst)
+    begin  
+  	 if(rst) 
+           begin  
+            out<=1'h0; 
+            drty<=4'd0;  
+           end 
+          else 
+           begin  
+            if(drty==4'd12)  out<=1'h1; else  drty<=drty+4'd1;   
+          end
+    end	
+    endmodule	 
+	 
+	 
+  module BekleCount2(out,osc,zamn,rst);
+    output reg out;
+	 input osc,rst;
+	 input [7:0] zamn;
+	 reg [7:0] drty;
+	 
+	 always@(posedge osc or posedge rst)
+    begin  
+  	 if(rst) 
+	   begin 
+             out<=1'h0; 
+             drty<=8'd0;  
+            end 
+              else 
+		begin  
+                  if(zamn<8'd2) 
+                     begin  
+                      out<=1'h0; 
+                     end 
+                   else 
+                begin   
+              if(drty>=zamn)  out<=1'h1; else  drty<=drty+8'd1;   
+            end  
+        end
+    end	
+		 
+    endmodule	 
+	 	 
+	 
+ module T_FFxx(out,in,oke);	
+   output reg out;
+	input in,oke;
+   always@(posedge in or posedge oke)
+    begin 
+     if(oke) out<=0; else out<=in;
+    end
+
+  endmodule 
+
+  
+module counter (
+	input clk,
+	output led
+	);
+	
+	reg [31:0] r_count;
+	reg r_freq;
+	
+	always @(posedge clk) begin
+		r_count <= r_count + 1;
+		if(r_count == 12000000) begin
+			r_count <= 0;
+			r_freq <= ~r_freq;
+		end
+	end
+	
+	assign led = r_freq;
+endmodule

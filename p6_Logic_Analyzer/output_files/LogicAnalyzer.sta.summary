@@ -1,0 +1,689 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'HHj|clk[1]'
+Slack : -14.251
+TNS   : -423.579
+
+Type  : Slow 1200mV 85C Model Setup 'Div17:comb_26|Clockout'
+Slack : -13.446
+TNS   : -447.868
+
+Type  : Slow 1200mV 85C Model Setup 'Div2:comb_9|Clockout'
+Slack : -11.363
+TNS   : -329.463
+
+Type  : Slow 1200mV 85C Model Setup 'Div5:comb_17|Clockout'
+Slack : -10.997
+TNS   : -317.615
+
+Type  : Slow 1200mV 85C Model Setup 'Div5:comb_22|Clockout'
+Slack : -10.943
+TNS   : -316.017
+
+Type  : Slow 1200mV 85C Model Setup 'Div2:comb_18|Clockout'
+Slack : -10.909
+TNS   : -317.370
+
+Type  : Slow 1200mV 85C Model Setup 'Div2:comb_14|Clockout'
+Slack : -10.739
+TNS   : -309.327
+
+Type  : Slow 1200mV 85C Model Setup 'Div2:comb_15|Clockout'
+Slack : -10.452
+TNS   : -303.038
+
+Type  : Slow 1200mV 85C Model Setup 'Div5:comb_11|Clockout'
+Slack : -10.207
+TNS   : -294.050
+
+Type  : Slow 1200mV 85C Model Setup 'Div5:comb_13|Clockout'
+Slack : -10.112
+TNS   : -299.714
+
+Type  : Slow 1200mV 85C Model Setup 'Div5:comb_20|Clockout'
+Slack : -10.017
+TNS   : -288.926
+
+Type  : Slow 1200mV 85C Model Setup 'Div2:comb_23|Clockout'
+Slack : -9.911
+TNS   : -295.825
+
+Type  : Slow 1200mV 85C Model Setup 'Div16:comb_24|SS[2]'
+Slack : -4.626
+TNS   : -30.554
+
+Type  : Slow 1200mV 85C Model Setup 'Div16:comb_24|SS[3]'
+Slack : -2.153
+TNS   : -2.675
+
+Type  : Slow 1200mV 85C Model Setup 'Div16:comb_25|SS[3]'
+Slack : -0.782
+TNS   : -2.156
+
+Type  : Slow 1200mV 85C Model Hold 'Div2:comb_9|Clockout'
+Slack : 0.202
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Div2:comb_15|Clockout'
+Slack : 0.435
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Div2:comb_18|Clockout'
+Slack : 0.436
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Div5:comb_20|Clockout'
+Slack : 0.436
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Div16:comb_24|SS[2]'
+Slack : 0.454
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Div16:comb_24|SS[3]'
+Slack : 0.454
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Div16:comb_25|SS[3]'
+Slack : 0.454
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Div17:comb_26|Clockout'
+Slack : 0.454
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Div2:comb_23|Clockout'
+Slack : 0.455
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Div5:comb_11|Clockout'
+Slack : 0.455
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Div5:comb_13|Clockout'
+Slack : 0.466
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Div2:comb_14|Clockout'
+Slack : 0.655
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Div5:comb_17|Clockout'
+Slack : 0.695
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Div5:comb_22|Clockout'
+Slack : 0.837
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'HHj|clk[1]'
+Slack : 1.148
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'Div16:comb_25|SS[3]'
+Slack : -7.938
+TNS   : -39.690
+
+Type  : Slow 1200mV 85C Model Recovery 'BekleCount2:comb_623|out'
+Slack : -7.391
+TNS   : -7.391
+
+Type  : Slow 1200mV 85C Model Recovery 'Div16:comb_24|SS[2]'
+Slack : -0.930
+TNS   : -11.656
+
+Type  : Slow 1200mV 85C Model Recovery 'hazir'
+Slack : -0.789
+TNS   : -0.789
+
+Type  : Slow 1200mV 85C Model Removal 'Div16:comb_24|SS[2]'
+Slack : 0.724
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'Div16:comb_25|SS[3]'
+Slack : 1.235
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'hazir'
+Slack : 1.315
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'BekleCount2:comb_623|out'
+Slack : 3.556
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Div2:comb_9|Clockout'
+Slack : -3.444
+TNS   : -439.355
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Div5:comb_13|Clockout'
+Slack : -3.444
+TNS   : -88.012
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Div5:comb_20|Clockout'
+Slack : -3.444
+TNS   : -83.677
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Div2:comb_15|Clockout'
+Slack : -3.444
+TNS   : -83.279
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Div2:comb_18|Clockout'
+Slack : -3.444
+TNS   : -83.148
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Div5:comb_11|Clockout'
+Slack : -3.444
+TNS   : -81.729
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Div2:comb_23|Clockout'
+Slack : -3.444
+TNS   : -80.831
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Div5:comb_17|Clockout'
+Slack : -3.444
+TNS   : -74.541
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Div5:comb_22|Clockout'
+Slack : -3.444
+TNS   : -74.537
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Div2:comb_14|Clockout'
+Slack : -3.444
+TNS   : -74.479
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Div17:comb_26|Clockout'
+Slack : -3.201
+TNS   : -195.932
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Div16:comb_24|SS[2]'
+Slack : -1.487
+TNS   : -22.305
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Div16:comb_25|SS[3]'
+Slack : -1.487
+TNS   : -7.435
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Div16:comb_24|SS[3]'
+Slack : -1.487
+TNS   : -5.948
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'BekleCount2:comb_623|out'
+Slack : -1.487
+TNS   : -1.487
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'hazir'
+Slack : -1.487
+TNS   : -1.487
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'HHj|clk[1]'
+Slack : 3.242
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 9.964
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'freq_in'
+Slack : 41.594
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'HHj|clk[1]'
+Slack : -13.354
+TNS   : -391.551
+
+Type  : Slow 1200mV 0C Model Setup 'Div17:comb_26|Clockout'
+Slack : -12.821
+TNS   : -409.557
+
+Type  : Slow 1200mV 0C Model Setup 'Div2:comb_9|Clockout'
+Slack : -10.802
+TNS   : -307.835
+
+Type  : Slow 1200mV 0C Model Setup 'Div5:comb_17|Clockout'
+Slack : -10.463
+TNS   : -297.527
+
+Type  : Slow 1200mV 0C Model Setup 'Div5:comb_22|Clockout'
+Slack : -10.404
+TNS   : -295.761
+
+Type  : Slow 1200mV 0C Model Setup 'Div2:comb_18|Clockout'
+Slack : -10.382
+TNS   : -297.120
+
+Type  : Slow 1200mV 0C Model Setup 'Div2:comb_14|Clockout'
+Slack : -10.209
+TNS   : -289.362
+
+Type  : Slow 1200mV 0C Model Setup 'Div2:comb_15|Clockout'
+Slack : -9.953
+TNS   : -283.633
+
+Type  : Slow 1200mV 0C Model Setup 'Div5:comb_11|Clockout'
+Slack : -9.707
+TNS   : -274.531
+
+Type  : Slow 1200mV 0C Model Setup 'Div5:comb_13|Clockout'
+Slack : -9.598
+TNS   : -278.626
+
+Type  : Slow 1200mV 0C Model Setup 'Div2:comb_23|Clockout'
+Slack : -9.552
+TNS   : -280.453
+
+Type  : Slow 1200mV 0C Model Setup 'Div5:comb_20|Clockout'
+Slack : -9.528
+TNS   : -269.947
+
+Type  : Slow 1200mV 0C Model Setup 'Div16:comb_24|SS[2]'
+Slack : -4.087
+TNS   : -26.846
+
+Type  : Slow 1200mV 0C Model Setup 'Div16:comb_24|SS[3]'
+Slack : -1.967
+TNS   : -2.253
+
+Type  : Slow 1200mV 0C Model Setup 'Div16:comb_25|SS[3]'
+Slack : -0.630
+TNS   : -1.468
+
+Type  : Slow 1200mV 0C Model Hold 'Div2:comb_9|Clockout'
+Slack : -0.008
+TNS   : -0.008
+
+Type  : Slow 1200mV 0C Model Hold 'Div2:comb_15|Clockout'
+Slack : 0.384
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Div2:comb_18|Clockout'
+Slack : 0.385
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Div5:comb_20|Clockout'
+Slack : 0.385
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Div16:comb_25|SS[3]'
+Slack : 0.402
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Div17:comb_26|Clockout'
+Slack : 0.402
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Div5:comb_11|Clockout'
+Slack : 0.402
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Div16:comb_24|SS[2]'
+Slack : 0.403
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Div16:comb_24|SS[3]'
+Slack : 0.403
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Div2:comb_23|Clockout'
+Slack : 0.403
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Div5:comb_13|Clockout'
+Slack : 0.418
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Div2:comb_14|Clockout'
+Slack : 0.606
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Div5:comb_17|Clockout'
+Slack : 0.641
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Div5:comb_22|Clockout'
+Slack : 0.780
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'HHj|clk[1]'
+Slack : 0.886
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'Div16:comb_25|SS[3]'
+Slack : -7.476
+TNS   : -37.380
+
+Type  : Slow 1200mV 0C Model Recovery 'BekleCount2:comb_623|out'
+Slack : -6.842
+TNS   : -6.842
+
+Type  : Slow 1200mV 0C Model Recovery 'Div16:comb_24|SS[2]'
+Slack : -0.919
+TNS   : -10.758
+
+Type  : Slow 1200mV 0C Model Recovery 'hazir'
+Slack : -0.623
+TNS   : -0.623
+
+Type  : Slow 1200mV 0C Model Removal 'Div16:comb_24|SS[2]'
+Slack : 0.616
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'Div16:comb_25|SS[3]'
+Slack : 1.129
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'hazir'
+Slack : 1.195
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'BekleCount2:comb_623|out'
+Slack : 3.446
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Div2:comb_9|Clockout'
+Slack : -3.444
+TNS   : -413.233
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Div5:comb_13|Clockout'
+Slack : -3.444
+TNS   : -100.756
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Div5:comb_20|Clockout'
+Slack : -3.444
+TNS   : -94.301
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Div2:comb_15|Clockout'
+Slack : -3.444
+TNS   : -91.012
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Div2:comb_18|Clockout'
+Slack : -3.444
+TNS   : -90.197
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Div5:comb_11|Clockout'
+Slack : -3.444
+TNS   : -88.398
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Div2:comb_23|Clockout'
+Slack : -3.444
+TNS   : -85.225
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Div5:comb_22|Clockout'
+Slack : -3.444
+TNS   : -77.885
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Div5:comb_17|Clockout'
+Slack : -3.444
+TNS   : -77.171
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Div2:comb_14|Clockout'
+Slack : -3.444
+TNS   : -76.588
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Div17:comb_26|Clockout'
+Slack : -3.201
+TNS   : -196.166
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Div16:comb_24|SS[2]'
+Slack : -1.487
+TNS   : -22.305
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Div16:comb_25|SS[3]'
+Slack : -1.487
+TNS   : -7.435
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Div16:comb_24|SS[3]'
+Slack : -1.487
+TNS   : -5.948
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'BekleCount2:comb_623|out'
+Slack : -1.487
+TNS   : -1.487
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'hazir'
+Slack : -1.487
+TNS   : -1.487
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'HHj|clk[1]'
+Slack : 3.111
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 9.964
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'freq_in'
+Slack : 41.604
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'HHj|clk[1]'
+Slack : -6.789
+TNS   : -200.411
+
+Type  : Fast 1200mV 0C Model Setup 'Div17:comb_26|Clockout'
+Slack : -5.669
+TNS   : -126.815
+
+Type  : Fast 1200mV 0C Model Setup 'Div2:comb_9|Clockout'
+Slack : -4.756
+TNS   : -133.989
+
+Type  : Fast 1200mV 0C Model Setup 'Div5:comb_17|Clockout'
+Slack : -4.622
+TNS   : -129.701
+
+Type  : Fast 1200mV 0C Model Setup 'Div5:comb_22|Clockout'
+Slack : -4.592
+TNS   : -128.768
+
+Type  : Fast 1200mV 0C Model Setup 'Div2:comb_18|Clockout'
+Slack : -4.582
+TNS   : -128.421
+
+Type  : Fast 1200mV 0C Model Setup 'Div2:comb_14|Clockout'
+Slack : -4.528
+TNS   : -126.693
+
+Type  : Fast 1200mV 0C Model Setup 'Div2:comb_15|Clockout'
+Slack : -4.404
+TNS   : -122.725
+
+Type  : Fast 1200mV 0C Model Setup 'Div5:comb_11|Clockout'
+Slack : -4.290
+TNS   : -119.077
+
+Type  : Fast 1200mV 0C Model Setup 'Div5:comb_13|Clockout'
+Slack : -4.213
+TNS   : -118.582
+
+Type  : Fast 1200mV 0C Model Setup 'Div5:comb_20|Clockout'
+Slack : -4.202
+TNS   : -116.261
+
+Type  : Fast 1200mV 0C Model Setup 'Div2:comb_23|Clockout'
+Slack : -4.062
+TNS   : -117.802
+
+Type  : Fast 1200mV 0C Model Setup 'Div16:comb_24|SS[2]'
+Slack : -1.502
+TNS   : -7.642
+
+Type  : Fast 1200mV 0C Model Setup 'Div16:comb_24|SS[3]'
+Slack : -0.806
+TNS   : -0.806
+
+Type  : Fast 1200mV 0C Model Setup 'Div16:comb_25|SS[3]'
+Slack : 0.241
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Div2:comb_15|Clockout'
+Slack : 0.178
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Div2:comb_18|Clockout'
+Slack : 0.179
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Div2:comb_9|Clockout'
+Slack : 0.179
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Div5:comb_20|Clockout'
+Slack : 0.179
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Div17:comb_26|Clockout'
+Slack : 0.185
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Div16:comb_24|SS[3]'
+Slack : 0.186
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Div5:comb_11|Clockout'
+Slack : 0.186
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Div16:comb_24|SS[2]'
+Slack : 0.187
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Div16:comb_25|SS[3]'
+Slack : 0.187
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Div2:comb_23|Clockout'
+Slack : 0.188
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Div5:comb_13|Clockout'
+Slack : 0.194
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Div2:comb_14|Clockout'
+Slack : 0.249
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Div5:comb_17|Clockout'
+Slack : 0.265
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Div5:comb_22|Clockout'
+Slack : 0.323
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'HHj|clk[1]'
+Slack : 0.530
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'Div16:comb_25|SS[3]'
+Slack : -2.841
+TNS   : -14.205
+
+Type  : Fast 1200mV 0C Model Recovery 'BekleCount2:comb_623|out'
+Slack : -2.734
+TNS   : -2.734
+
+Type  : Fast 1200mV 0C Model Recovery 'Div16:comb_24|SS[2]'
+Slack : 0.173
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'hazir'
+Slack : 0.195
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'Div16:comb_24|SS[2]'
+Slack : 0.278
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'Div16:comb_25|SS[3]'
+Slack : 0.424
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'hazir'
+Slack : 0.562
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'BekleCount2:comb_623|out'
+Slack : 1.225
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Div2:comb_9|Clockout'
+Slack : -3.000
+TNS   : -155.425
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Div5:comb_13|Clockout'
+Slack : -3.000
+TNS   : -52.800
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Div5:comb_11|Clockout'
+Slack : -3.000
+TNS   : -51.319
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Div5:comb_20|Clockout'
+Slack : -3.000
+TNS   : -50.442
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Div2:comb_18|Clockout'
+Slack : -3.000
+TNS   : -50.372
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Div2:comb_15|Clockout'
+Slack : -3.000
+TNS   : -50.202
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Div2:comb_23|Clockout'
+Slack : -3.000
+TNS   : -48.880
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Div2:comb_14|Clockout'
+Slack : -3.000
+TNS   : -45.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Div5:comb_17|Clockout'
+Slack : -3.000
+TNS   : -45.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Div5:comb_22|Clockout'
+Slack : -3.000
+TNS   : -45.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Div17:comb_26|Clockout'
+Slack : -1.000
+TNS   : -126.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Div16:comb_24|SS[2]'
+Slack : -1.000
+TNS   : -15.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Div16:comb_25|SS[3]'
+Slack : -1.000
+TNS   : -5.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Div16:comb_24|SS[3]'
+Slack : -1.000
+TNS   : -4.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'BekleCount2:comb_623|out'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'hazir'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'HHj|clk[1]'
+Slack : 3.931
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 9.982
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'freq_in'
+Slack : 41.252
+TNS   : 0.000
+
+------------------------------------------------------------

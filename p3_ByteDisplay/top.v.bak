@@ -1,0 +1,25 @@
+module top (
+	input clk,
+	output d1,
+	output d2,
+	output d3,
+	output d4,
+	output d5,
+	output d6,
+	output d7,
+	output d8,
+	output d9,
+	);
+	
+	assign d1 = 1;
+	assign d2 = 1;
+	assign d3 = 1;
+	assign d4 = 1;
+	assign d5 = 1;
+	assign d6 = 1;
+	assign d7 = 1;
+	assign d8 = 1;
+	assign d9 = 1;
+	
+
+endmodule

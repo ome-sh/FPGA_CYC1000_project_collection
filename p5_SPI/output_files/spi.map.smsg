@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at top.v(55): always construct contains both blocking and non-blocking assignments File: /home/linux/Dokumente/00_FPGA/INTEL_Cyclone10_CYC1000/p5_SPI/top.v Line: 55

@@ -1,0 +1,45 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "o_led_2",
+					"strict" : false
+				},
+				{
+					"name" : "o_led_1",
+					"strict" : false
+				},
+				{
+					"name" : "o_led_3",
+					"strict" : false
+				},
+				{
+					"name" : "o_led_4",
+					"strict" : false
+				},
+				{
+					"name" : "o_led_5",
+					"strict" : false
+				},
+				{
+					"name" : "o_led_6",
+					"strict" : false
+				},
+				{
+					"name" : "o_led_7",
+					"strict" : false
+				},
+				{
+					"name" : "o_led_8",
+					"strict" : false
+				},
+				{
+					"name" : "output_clk_25mhz",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at derf.v(72): always construct contains both blocking and non-blocking assignments File: G:/00_FGPA/INTEL_Cyclone10_CYC1000/p6_Logic_Analyzer/derf.v Line: 72
+Warning (10268): Verilog HDL information at derf.v(159): always construct contains both blocking and non-blocking assignments File: G:/00_FGPA/INTEL_Cyclone10_CYC1000/p6_Logic_Analyzer/derf.v Line: 159
